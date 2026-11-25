@@ -11,12 +11,23 @@ The plugin also includes the `/wasabi:setup` skill for OAuth and credential prob
 
 ## Install
 
+### Claude Code
+
 ```
-/plugin marketplace add <path-or-git-url-of-this-repo>
+/plugin marketplace add matteoantoci/wasabi-s3-plugin
 /plugin install wasabi@wasabi-plugins
 ```
 
-For a local test: `claude --plugin-dir .`
+### omp
+
+```
+omp plugin marketplace add matteoantoci/wasabi-s3-plugin
+omp plugin install wasabi@wasabi-plugins
+```
+
+If omp already loads your Claude Code plugins (`enabledProviders` contains `claude` or `claude-plugins`), skip this step. A second install loads the servers two times.
+
+For a local test in Claude Code: `claude --plugin-dir .`
 
 ## Connect
 

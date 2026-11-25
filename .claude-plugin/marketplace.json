@@ -1,0 +1,14 @@
+{
+  "description": "Claude Code plugin for the hosted Wasabi MCP server",
+  "name": "wasabi-plugins",
+  "owner": {
+    "name": "mantoci"
+  },
+  "plugins": [
+    {
+      "name": "wasabi",
+      "source": "./",
+      "description": "Wasabi S3 and IAM/STS tools through the hosted Wasabi MCP server"
+    }
+  ]
+}

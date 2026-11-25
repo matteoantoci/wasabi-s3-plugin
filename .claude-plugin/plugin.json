@@ -1,0 +1,14 @@
+{
+  "name": "wasabi",
+  "displayName": "Wasabi",
+  "version": "0.1.0",
+  "description": "Wasabi S3 and IAM/STS tools through the hosted Wasabi MCP server (OAuth, no access keys in config)",
+  "author": {
+    "name": "mantoci"
+  },
+  "homepage": "https://docs.wasabi.com/docs/hosted-wasabi-mcp-with-ai-systems",
+  "keywords": ["wasabi", "s3", "iam", "sts", "object-storage", "mcp"],
+  "network": {
+    "hosts": ["mcp.wasabisys.dev"]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "wasabi-s3": {
+      "type": "http",
+      "url": "https://mcp.wasabisys.dev/s3"
+    },
+    "wasabi-iam": {
+      "type": "http",
+      "url": "https://mcp.wasabisys.dev/iam"
+    }
+  }
+}

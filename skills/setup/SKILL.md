@@ -14,12 +14,14 @@ The plugin connects two hosted MCP servers. Each server has its own OAuth login:
 
 Two auth layers exist. Find the failed layer, then give the user its fix.
 
-## Layer 1: OAuth between Claude Code and the server
+## Layer 1: OAuth between the client and the server
 
 Symptom: the tools are missing, or a tool returns 401, an expired token, or an OAuth error.
 
-1. Tell the user to run `/mcp`, select the server, and authenticate. A browser window opens for the login.
-2. If the server still fails, tell the user to clear its authentication in `/mcp` and authenticate again.
+1. Tell the user to log in. A browser window opens for the login.
+   - Claude Code: run `/mcp`, select `plugin:wasabi:wasabi-s3` or `plugin:wasabi:wasabi-iam`, and authenticate.
+   - omp: run `/mcp reauth wasabi:wasabi-s3` or `/mcp reauth wasabi:wasabi-iam`.
+2. If the server still fails in Claude Code, tell the user to clear its authentication in `/mcp` and authenticate again.
 
 The OAuth callback is a loopback address. A firewall that blocks `localhost` callbacks stops the login.
 

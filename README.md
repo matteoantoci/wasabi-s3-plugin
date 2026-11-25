@@ -31,11 +31,13 @@ For a local test in Claude Code: `claude --plugin-dir .`
 
 ## Connect
 
-1. Run `/mcp`, select `wasabi-s3`, and authenticate. Your browser opens the Wasabi login.
+1. Log in to the S3 server. Your browser opens the Wasabi login.
+   - Claude Code: run `/mcp`, select `plugin:wasabi:wasabi-s3`, and authenticate.
+   - omp: run `/mcp reauth wasabi:wasabi-s3`.
 2. On the first login, save your Wasabi access key and secret key in the dashboard at <https://mcp.wasabisys.dev>.
-3. Do step 1 again for `wasabi-iam`. It uses the same saved key.
+3. Do step 1 again for the IAM server: `plugin:wasabi:wasabi-iam` in Claude Code, `wasabi:wasabi-iam` in omp. It uses the same saved key.
 
-Claude Code gets only a short-lived OAuth token. Your Wasabi keys stay encrypted on the server.
+The client gets only a short-lived OAuth token. Your Wasabi keys stay encrypted on the server.
 
 ## WACM
 

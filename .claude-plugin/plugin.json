@@ -1,7 +1,7 @@
 {
   "name": "wasabi",
   "displayName": "Wasabi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wasabi S3 and IAM/STS tools through the hosted Wasabi MCP server (OAuth, no access keys in config)",
   "author": {
     "name": "mantoci"
